@@ -1,5 +1,6 @@
 {
   "name": "data-structures-slgorithms-js",
+  "author": "samu",
   "version": "1.0.0",
   "description": "Data Structures & Algorithms | JavaScript",
   "type": "module"
