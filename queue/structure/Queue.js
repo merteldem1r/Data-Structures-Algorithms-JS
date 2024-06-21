@@ -5,11 +5,23 @@ class Node {
   }
 }
 
-class Queue {
+export class Queue {
   constructor() {
     this.first = null;
     this.last = null;
     this.length = 0;
+  }
+
+  get front() {
+    return this.first;
+  }
+
+  get back() {
+    return this.last;
+  }
+
+  get len() {
+    return this.length;
   }
 
   peek() {
@@ -55,13 +67,3 @@ class Queue {
     return this.length == 0;
   }
 }
-
-const MyQueue = new Queue();
-MyQueue.enqueue("Google");
-MyQueue.enqueue("Discord");
-MyQueue.enqueue("YouTube");
-MyQueue.dequeue();
-MyQueue.dequeue();
-console.log("peek(): ", MyQueue.peek());
-console.log("isEmpty(): ", MyQueue.isEmpty());
-console.log(MyQueue);

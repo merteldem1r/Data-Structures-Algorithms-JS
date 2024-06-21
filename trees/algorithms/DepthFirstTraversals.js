@@ -19,13 +19,11 @@ Root.left.left = NewNode(4);
 Root.left.right = NewNode(5);
 
 /*
-
 ROOT TREE: 
 
         1
     2      3   
   4   5 
-
 */
 
 // Depth First Traversal (DFS)
