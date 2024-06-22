@@ -28,11 +28,11 @@ ROOT TREE:
 
 // Breadth First Search (BFS);
 
-// * Level Order Traversal (without using queue) *
+// * BFS (without using queue) *
 
 // foo ****
 
-// * Level Order Traversal Using Queu *
+// * BFS Using Queue *
 
 function printLevelOrder(root) {
   const queue = new Queue();
@@ -41,7 +41,7 @@ function printLevelOrder(root) {
 
   while (!queue.isEmpty()) {
     const temp = queue.dequeue(); // Node from queue
-    const treeTemp = temp.val; // TreeNode from queue node;
+    const treeTemp = temp.val; // TreeNode from queue Node;
 
     console.log(treeTemp.val, " ");
 
