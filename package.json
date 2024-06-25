@@ -3,5 +3,6 @@
   "author": "samu",
   "version": "1.0.0",
   "description": "Data Structures & Algorithms | JavaScript",
+  "license": "MIT",
   "type": "module"
 }
