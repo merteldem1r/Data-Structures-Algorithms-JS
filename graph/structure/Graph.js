@@ -8,6 +8,7 @@ class Graph {
     if (node in this.adjacentList) return -1;
     else this.adjacentList[node] = new Set([]);
 
+    ++this.numberOfNodes;
     return this.adjacentList[node];
   }
 
