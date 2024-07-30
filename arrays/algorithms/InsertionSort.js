@@ -1,27 +1,16 @@
 const arr = [6, 5, 3, 1, 8, 7, 2, 4];
 
 function insertionSort(arr) {
-  for (let i = 1; i < arr.length; ++i) {
-    let insertIdx = i;
+  for (let i = 1; i < arr.length; i++) {
+    let current = arr[i];
+    let j = i - 1;
 
-    for (let j = 0; j < i; ++j) {
-      if (arr[i] <= arr[j]) {
-        insertIdx = j;
-        break;
-      }
+    while (j >= 0 && arr[j] > current) {
+      arr[j + 1] = arr[j];
+      j--;
     }
-
-    if (insertIdx != i) {
-      let carryTemp = arr[i];
-
-      for (let k = insertIdx; k < i + 1; ++k) {
-        const temp = arr[k];
-        arr[k] = carryTemp;
-        carryTemp = temp;
-      }
-    }
+    arr[j + 1] = current;
   }
-
   return arr;
 }
 
