@@ -28,12 +28,6 @@ ROOT TREE:
 
 // Breadth First Search (BFS);
 
-// * BFS (without using queue) *
-
-// foo ****
-
-// * BFS Using Queue *
-
 function printLevelOrder(root) {
   const queue = new Queue();
 
